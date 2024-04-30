@@ -1,0 +1,6 @@
+FROM postgres:latest
+ENV POSTGRES_DB gestion_produits
+ENV POSTGRES_USER root
+ENV POSTGRES_PASSWORD root
+COPY ./database/gestion_produits.sql /docker-entrypoint-initdb.d/
+EXPOSE 5432
