@@ -84,3 +84,25 @@ docker-compose up -d
 ```bash
 docker-compose down
 ```
+
+### 4. Version PostgreSql 
+
+1. se placer sur la branche dev
+```bash
+git checkout postgre-sql
+```
+
+2. Construire les images Docker
+```bash
+docker-compose build
+```
+
+3. Exécuter les conteneurs
+```bash
+docker-compose up -d
+```
+
+4. Arrêter les conteneurs
+```bash
+docker-compose down
+```
