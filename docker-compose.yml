@@ -1,0 +1,18 @@
+services:
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./www:/var/www/html
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: gestion_produits
