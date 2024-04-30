@@ -12,7 +12,7 @@ services:
   db:
     build:
       context: .
-      dockerfile: Dockerfile-mysql
+      dockerfile: Dockerfile-postgre
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: gestion_produits
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: gestion_produits
