@@ -65,12 +65,22 @@ docker-compose down
 
 ### 3. Version Dev: mise en place de la plateforme
 
-2. se placer sur la branche dev
+1. se placer sur la branche dev
 ```bash
 git checkout dev
 ```
 
-1. Construire les images Docker
+2. Construire les images Docker
 ```bash
-docker-compose -f docker-compose-dev.yml build
+docker-compose build
+```
+
+3. Exécuter les conteneurs
+```bash
+docker-compose up -d
+```
+
+4. Arrêter les conteneurs
+```bash
+docker-compose down
 ```
